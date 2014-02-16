@@ -32829,3 +32829,242 @@ Processing by BreweriesController#index as HTML
   Rendered breweries/index.html.erb within layouts/application (2.5ms)
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
   [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:26:23 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 224ms (Views: 210.6ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:26:23 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:32:03 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:32:03 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:32:03 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:32:03 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:32:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:32:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:32:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:32:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:34:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 29ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:35:22 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 61ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+  Rendered places/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+Started POST "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#search as HTML
+  Parameters: {"utf8"=>"✓", "city"=>"kumpula", "commit"=>"Search"}
+Redirected to http://www.example.com/places
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:48:58 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
