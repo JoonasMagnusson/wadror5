@@ -44,6 +44,10 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use unicorn as the app server
 # gem 'unicorn'
 
+gem 'therubyracer', platforms: :ruby
+
+gem 'httparty'
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'
   gem 'byebug'

@@ -28422,3 +28422,115 @@ Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-02 17:00:51
 
 
 Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-02 17:00:51 +0200
+  [1m[36m (109.2ms)[0m  [1mCREATE TABLE "beer_clubs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "founded" integer, "city" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (116.7ms)[0m  CREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "style" varchar(255), "brewery_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (116.7ms)[0m  [1mCREATE TABLE "breweries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "year" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (108.3ms)[0m  CREATE TABLE "memberships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "beer_club_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (91.6ms)[0m  [1mCREATE TABLE "ratings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "beer_id" integer, "created_at" datetime, "updated_at" datetime, "user_id" integer) [0m
+  [1m[35m (91.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "created_at" datetime, "updated_at" datetime, "password_digest" varchar(255), "admin" boolean) 
+  [1m[36m (98.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (83.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (91.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140130181759')
+  [1m[36m (108.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140122235710')[0m
+  [1m[35m (101.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140106205224')
+  [1m[36m (108.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140121192627')[0m
+  [1m[35m (108.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140115222717')
+  [1m[36m (108.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140106173907')[0m
+  [1m[35m (108.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140121232716')
+  [1m[36m (92.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140122235314')[0m
+  [1m[35m (83.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140123153917')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Koff"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["year", 1897]]
+  [1m[35m (86.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)  [["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Malmgard"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["year", 2001]]
+  [1m[36m (89.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "breweries" ("created_at", "name", "updated_at", "year") VALUES (?, ?, ?, ?)[0m  [["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Weihenstephaner"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["year", 1042]]
+  [1m[35m (90.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 1], ["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Iso 3"], ["style", "Lager"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00]]
+  [1m[36m (88.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 1], ["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Karhu"], ["style", "Lager"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00]]
+  [1m[35m (97.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 1], ["created_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00], ["name", "Tuplahumala"], ["style", "Lager"], ["updated_at", Sun, 16 Feb 2014 12:09:19 UTC +00:00]]
+  [1m[36m (98.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 2], ["created_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00], ["name", "Huvila Pale Ale"], ["style", "Pale Ale"], ["updated_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00]]
+  [1m[35m (107.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 2], ["created_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00], ["name", "X Porter"], ["style", "Porter"], ["updated_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00]]
+  [1m[36m (107.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["brewery_id", 3], ["created_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00], ["name", "Hefezeizen"], ["style", "Weizen"], ["updated_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00]]
+  [1m[35m (106.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("brewery_id", "created_at", "name", "style", "updated_at") VALUES (?, ?, ?, ?, ?)  [["brewery_id", 3], ["created_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00], ["name", "Helles"], ["style", "Lager"], ["updated_at", Sun, 16 Feb 2014 12:09:20 UTC +00:00]]
+  [1m[36m (107.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-16 16:07:21 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BreweriesController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "breweries"
+  [1m[36mBrewery Load (0.1ms)[0m  [1mSELECT "breweries".* FROM "breweries"[0m
+  Rendered breweries/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 317ms (Views: 297.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/beer_clubs.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/breweries.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/memberships.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/beer_clubs.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/breweries.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/memberships.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-16 16:07:22 +0200
+
+
+Started GET "/places" for 127.0.0.1 at 2014-02-16 16:07:24 +0200
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
