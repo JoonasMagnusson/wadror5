@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+  before_action :set_place, only: [:show]
+
   def index
   end
 
@@ -9,5 +11,13 @@ class PlacesController < ApplicationController
     else
       render :index
     end
+    session[:last_search] = :places
   end
+
+  def show
+  end
+
+  def set_place
+      @place = BeermappingApi.place(params[:id])
+    end
 end

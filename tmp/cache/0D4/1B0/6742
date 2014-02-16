@@ -1,0 +1,5 @@
+o: ActiveSupport::Cache::Entry:@valueo:
+Place:@idI"	6742:ET:
+@nameI"Pullman Bar;	T:@statusI"Beer Bar;	T:@reviewlinkI"?http://beermapping.com/maps/reviews/reviews.php?locid=6742;	T:@proxylinkI"=http://beermapping.com/maps/proxymaps.php?locid=6742&d=5;	T:@blogmapI"Ghttp://beermapping.com/maps/blogproxy.php?locid=6742&d=1&type=norm;	T:@streetI"Kaivokatu 1;	T:
+@cityI"Helsinki;	T:@state0:	@zipI"
+00100;	T:@countryI"Finland;	T:@phoneI"+358 9 0307 22;	T:@overallI"72.500025;	T:@imagecountI"0;	T:@created_atf1392572040.0750005:@expires_inf1393781635.9522545

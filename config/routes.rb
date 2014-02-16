@@ -13,11 +13,15 @@ Ratebeer::Application.routes.draw do
 
   resources :sessions, :only => [:new, :create, :destroy]
 
+  resources :places, only:[:index, :show]
+
   get 'signup', to: 'users#new'
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
 
   get 'places', to: 'places#index'
+  get 'places/:id', to:'places#show'
+
   post 'places', to:'places#search'
 
   root 'breweries#index'

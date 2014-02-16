@@ -48,6 +48,8 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'httparty'
 
+gem "rails-settings-cached", "0.3.1"
+
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'
   gem 'byebug'
